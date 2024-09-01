@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RK Shoes Sales Team Panel</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto|Sriracha&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../stylish.css" />
+  </head>
+  <body>
+    <div class="return-to-home">
+      <a href="../index.html" class="back-home">back to Home</a>
+    </div>
+    <div id="personContainer" class="text-center">
+      <h2
+        id="salesTeamHeading"
+        class="font-semibold tracking-wide text-transparent bg-clip-text bg-gradient-to-l from-pink-400 to-blue-600 mb-3"
+      >
+        Sales Team Panel
+      </h2>
+      <div class="flex w-full items-center justify-center gap-6 mb-10">
+        <div class="border h-16 flex items-center justify-center">
+          <a
+            id="create-new-sales-person"
+            href="#_"
+            class="px-5 py-2.5 relative rounded group font-medium text-white inline-block"
+          >
+            <span
+              class="absolute top-0 left-0 w-full h-full rounded opacity-50 filter blur-sm bg-gradient-to-br from-purple-600 to-blue-500"
+            ></span>
+            <span
+              class="h-full w-full inset-0 absolute mt-0.5 ml-0.5 bg-gradient-to-br filter group-active:opacity-0 rounded opacity-50 from-purple-600 to-blue-500"
+            ></span>
+            <span
+              class="absolute inset-0 w-full h-full transition-all duration-200 ease-out rounded shadow-xl bg-gradient-to-br filter group-active:opacity-0 group-hover:blur-sm from-purple-600 to-blue-500"
+            ></span>
+            <span
+              class="absolute inset-0 w-full h-full transition duration-200 ease-out rounded bg-gradient-to-br to-purple-600 from-blue-500"
+            ></span>
+            <span class="relative">Create</span>
+          </a>
+        </div>
+        <div class="border h-16 flex items-center justify-center">
+          <a
+            id="view-persons"
+            href="#_"
+            class="px-5 py-2.5 relative rounded group font-medium text-white inline-block"
+          >
+            <span
+              class="absolute top-0 left-0 w-full h-full rounded opacity-50 filter blur-sm bg-gradient-to-br from-purple-600 to-blue-500"
+            ></span>
+            <span
+              class="h-full w-full inset-0 absolute mt-0.5 ml-0.5 bg-gradient-to-br filter group-active:opacity-0 rounded opacity-50 from-purple-600 to-blue-500"
+            ></span>
+            <span
+              class="absolute inset-0 w-full h-full transition-all duration-200 ease-out rounded shadow-xl bg-gradient-to-br filter group-active:opacity-0 group-hover:blur-sm from-purple-600 to-blue-500"
+            ></span>
+            <span
+              class="absolute inset-0 w-full h-full transition duration-200 ease-out rounded bg-gradient-to-br to-purple-600 from-blue-500"
+            ></span>
+            <span class="relative">View</span>
+          </a>
+        </div>
+      </div>
+      <div id="person-creation" class="hidden">
+        <input type="text" id="new-person" class="h-10" />
+        <div class="border w-full h-16 flex items-center justify-center">
+          <a
+            href="#_"
+            id="new-person-submit"
+            class="relative px-5 py-2 font-medium text-white group"
+          >
+            <span
+              class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-purple-500 group-hover:bg-purple-700 group-hover:skew-x-12"
+            ></span>
+            <span
+              class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-purple-700 group-hover:bg-purple-500 group-hover:-skew-x-12"
+            ></span>
+            <span
+              class="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-purple-600 -rotate-12"
+            ></span>
+            <span
+              class="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"
+            ></span>
+            <span class="relative">Create New Sales Person</span>
+          </a>
+        </div>
+      </div>
+      <div id="empty-person-error" class="hidden not-success">
+        Sales Person name must not be empty to create
+      </div>
+      <div id="new-person-create-success" class="hidden"></div>
+      <div id="person-view">
+        <table id="view-person-table"></table>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

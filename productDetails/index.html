@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RK Shoes Products Panel</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto|Sriracha&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../stylish.css" />
+  </head>
+  <body>
+    <div id="wrapper-container">
+      <div class="return-to-home">
+        <a href="../index.html" class="back-home">back to Home</a>
+      </div>
+      <div class="text-center">
+        <h2
+          id="salesTeamHeading"
+          class="font-semibold tracking-wide text-transparent bg-clip-text bg-gradient-to-l from-pink-400 to-blue-600 mb-3"
+        >
+          Products Panel
+        </h2>
+        <div id="product-view">
+          <table id="view-products-table"></table>
+        </div>
+        <div id="no-products-info">No Data available to show</div>
+        <div id="configure-product" class="hidden">
+          <h1>
+            Product configuration of
+            <span id="product-heading">Puma Shoes</span>
+          </h1>
+          <label for="configure-company-name">Company Name</label>
+          <input
+            type="text"
+            id="configure-company-name"
+            placeholder="Enter Company Name"
+          />
+          <label for="configure-brand-name">Brand</label>
+          <input
+            type="text"
+            id="configure-brand-name"
+            placeholder="Enter Brand Name"
+          />
+          <label for="configure-gender">Gender</label>
+          <input
+            type="text"
+            id="configure-gender"
+            placeholder="Enter Gender Type"
+          />
+          <label for="configure-article-number">Article Number</label>
+          <input
+            type="text"
+            id="configure-article-number"
+            placeholder="Enter Article Number"
+          />
+          <label for="configure-category">Category</label>
+          <input
+            type="text"
+            id="configure-category"
+            placeholder="Enter Category"
+          />
+          <div class="quantitics">
+            <div class="unit-rates">
+              <label for="configure-CTC">CTC</label>
+              <input type="number" id="configure-CTC" placeholder="CTC" />
+            </div>
+            <div class="unit-rates">
+              <label for="configure-last-price">Last Price</label>
+              <input
+                type="number"
+                id="configure-last-price"
+                placeholder="Last Price"
+              />
+            </div>
+            <div class="unit-rates">
+              <label for="configure-MRP">MRP</label>
+              <input type="number" id="configure-MRP" placeholder="MRP" />
+            </div>
+          </div>
+          <div class="configure-actions">
+            <button id="back-to-configure">back</button>
+            <button id="update-configuration">Update</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="loading hidden" id="loader">
+      <div class="birdLoader">
+        <span class="birdLoader__red"></span>
+        <span class="birdLoader__white"></span>
+        <span class="birdLoader__grey"></span>
+        <span class="birdLoader__yellow"></span>
+        <span class="birdLoader__orange"></span>
+        <span class="birdLoader__blue"></span>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

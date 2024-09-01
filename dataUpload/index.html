@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RK Shoes Data Upload Panel</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto|Sriracha&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../stylish.css" />
+  </head>
+  <body>
+    <div id="wrapper-container">
+      <div class="return-to-home">
+        <a href="../index.html" class="back-home">back to Home</a>
+      </div>
+      <div class="text-center">
+        <h2
+          id="salesTeamHeading"
+          class="font-semibold tracking-wide text-transparent bg-clip-text bg-gradient-to-l from-pink-400 to-blue-600 mb-3"
+        >
+          Data Upload Panel
+        </h2>
+      </div>
+      <div class="post-container" id="posting-page">
+        <div class="post-name">
+          <div class="field-heading">
+            Sales Date <span class="post-importance not-success">*</span>
+          </div>
+          <input
+            class="post-input"
+            type="date"
+            placeholder="Enter Person Name"
+            id="post-csv-date"
+            maxlength="250"
+          />
+        </div>
+        <div class="post-name">
+          <div class="field-heading">
+            Sales Person Name <span class="post-importance not-success">*</span>
+          </div>
+          <select
+            class="post-input"
+            name="select-sales-person"
+            id="select-sales-person"
+          >
+            <option class="hidden" value="" selected disabled>Select</option>
+          </select>
+        </div>
+        <div class="post-name">
+          <div class="field-heading">
+            Upload Sales CSV File
+            <span class="post-importance not-success">*</span>
+          </div>
+          <input
+            class="post-input"
+            type="file"
+            id="data-csv-input"
+            accept=".csv"
+          />
+          <div class="download-sample-wrapper">
+            <a
+              href="../sampleFiles/sampleUploadFile.csv"
+              download="sampleUploadFile.csv"
+              class="download-sample"
+              >Click here
+            </a>
+            to download sample Upload File
+          </div>
+        </div>
+        <div id="post-new-message" class="not-success hidden"></div>
+        <div class="post-name">
+          <div class="border w-full h-16 flex items-center justify-center">
+            <a
+              href="#_"
+              class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md"
+              id="upload-all"
+            >
+              <span
+                class="w-full h-full bg-gradient-to-br from-[#ff8a05] via-[#ff5478] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#ff5478] group-hover:to-[#ff8a05] absolute"
+              ></span>
+              <span
+                class="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400"
+              >
+                <span class="relative text-white">Upload Data</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="post-success" class="success hidden">
+        <div class="success-message text-center">
+          Your Post has been saved successfully
+        </div>
+        <div class="post-name">
+          <div class="border w-full h-16 flex items-center justify-center">
+            <a
+              href="#_"
+              class="relative p-0.5 inline-flex items-center justify-c`enter font-bold overflow-hidden group rounded-md"
+              id="upload-another"
+            >
+              <span
+                class="w-full h-full bg-gradient-to-br from-[#ff8a05] via-[#ff5478] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#ff5478] group-hover:to-[#ff8a05] absolute"
+              ></span>
+              <span
+                class="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400"
+              >
+                <span class="relative text-white">Upload New</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="no-sales-team" class="not-success hidden">
+        <div class="text-center">You have no Sales Team</div>
+        <div class="post-name">
+          <div class="border w-full h-16 flex items-center justify-center">
+            <a
+              href="../salesPerson/index.html"
+              class="relative p-0.5 inline-flex items-center justify-c`enter font-bold overflow-hidden group rounded-md"
+            >
+              <span
+                class="w-full h-full bg-gradient-to-br from-[#ff8a05] via-[#ff5478] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#ff5478] group-hover:to-[#ff8a05] absolute"
+              ></span>
+              <span
+                class="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400"
+              >
+                <span class="relative text-white">Configure Team</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="loading hidden" id="loader">
+      <div class="birdLoader">
+        <span class="birdLoader__red"></span>
+        <span class="birdLoader__white"></span>
+        <span class="birdLoader__grey"></span>
+        <span class="birdLoader__yellow"></span>
+        <span class="birdLoader__orange"></span>
+        <span class="birdLoader__blue"></span>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
